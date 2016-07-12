@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hl_global_distance_10"
+
+        android:background="@color/hl_color_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/hl_global_distance_15">
+
+            <ImageView
+                android:id="@+id/iv_appointhead"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="@dimen/hl_textsize_15"
+                android:src="@mipmap/hl_icon_appointhead" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_appointhead"
+                android:layout_alignTop="@id/iv_appointhead"
+                android:layout_toRightOf="@id/iv_appointhead"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="top"
+                    android:text="普通门诊"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:text="2016-06-13 上午"
+                    android:textColor="@color/hl_color_blue"
+                    android:textSize="@dimen/hl_textsize_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="浙江省杭州市第一人民医院"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_15" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView style="@style/hl_global_underline_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/hl_global_distance_15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="28dp"
+                    android:text="就诊科室" />
+
+                <TextView
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="心血管内科" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="28dp"
+                    android:text="门诊类型" />
+
+                <TextView
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通门诊" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="28dp"
+                    android:text="挂号费用" />
+
+                <TextView
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14.00元" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView style="@style/hl_global_underline_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/hl_global_distance_15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hl_textcolor_light"
+                    android:textSize="@dimen/hl_textsize_18"
+                    android:text="温馨提醒:" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@mipmap/hl_icon_circle_poi"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="28dp"
+                    android:text="实名制预约，就诊人信息不符将无法取号" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@mipmap/hl_icon_circle_poi"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="听诊将短信通知，请保持手机畅通" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView style="@style/hl_global_underline_bg" />
+
+
+        <LinearLayout
+
+            android:background="@color/hl_color_white"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/hl_global_distance_15"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_20"
+                    android:text="就诊人"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_arrow_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/hl_icon_arrow_right_big"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_20"
+                    android:text="周末"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+            <ImageView style="@style/hl_global_underline_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/hl_global_distance_15"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_20"
+                    android:text="预约时间段"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_arrow_right2"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/hl_icon_arrow_right_big"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_arrow_right2"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_20"
+                    android:text="08:20"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

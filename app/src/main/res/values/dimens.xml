@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="tab_icon_height">32dp</dimen>
+
+    <dimen name="hl_global_toolbarheight_50">50dp</dimen>
+    <dimen name="hl_global_dialog_distance_20">20dp</dimen>
+    <dimen name="hl_global_distance_10">10dp</dimen>
+    <dimen name="hl_global_distance_15">15dp</dimen>
+
+
+    <dimen name="hl_textsize_24">24sp</dimen>
+    <dimen name="hl_textsize_22">22sp</dimen>
+    <dimen name="hl_textsize_15">15sp</dimen>
+    <dimen name="hl_textsize_13">13sp</dimen>
+    <dimen name="hl_textsize_12">12sp</dimen>
+    <dimen name="hl_textsize_20">20sp</dimen>
+    <dimen name="hl_textsize_18">18sp</dimen>
+</resources>

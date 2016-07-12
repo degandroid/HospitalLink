@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\AndroidStutio\SDK\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_4fb44180a1946eb54d11b4a99acfc69d29faab7e.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.1_30f9a3edb5379373cecbd54720d03a1cb9e6ba52.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_3b18e7d6f0bbf61889fe415c27cb70e893e9d7bb.jar" />
+    </item>
+    <item
+        jar="C:\AndroidStutio\Stutio\gradle\gradle-2.10\caches\modules-2\files-2.1\com.squareup.okio\okio\1.0.0\2534c458682c73f5b9871131ab3098d3f987ca3\okio-1.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="02534c458682c73f5b9871131ab3098d3f987ca3">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\okio-1.0.0_e0450c29556f310086a501955b2d005fb58894b4.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d4c4b83de2f6412072d2a29b1b7a5b03edaad5ff">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\io.reactivex-rxandroid-1.1.0_1a7f106027e9042dac87f9d7ca192a652d2ac455.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.2.1_7e00d1661743c420112245fc0205a132749ddf8d.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="dc2606efa866cdc8290add0204ca67e330fbdee4">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_068693851b3f5123ed16876a84089aa14d0b158b.jar" />
+    </item>
+    <item
+        jar="C:\AndroidStutio\Stutio\gradle\gradle-2.10\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0_e020fb8330d89171b3feec776a56584588cdf124.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_d2c0679a3b983f5bd5d18447c57b55a48e06f523.jar" />
+    </item>
+    <item
+        jar="C:\AndroidStutio\Stutio\gradle\gradle-2.10\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.0\748f0546d5c3c27f1aef07270ffea0c45f0c42a4\rxjava-1.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="748f0546d5c3c27f1aef07270ffea0c45f0c42a4">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\rxjava-1.1.0_6fbc15718dfcee427697bf4fd6d0ef96daa0d73b.jar" />
+    </item>
+    <item
+        jar="C:\AndroidStutio\Stutio\gradle\gradle-2.10\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_26b7b456d7d938c6211fbef7d16055e8a0858459.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82a9a96cf589015b95d0625d2e7e6c5cbe821f33">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\instant-run_68cebcadf202d32efb76ac0ab917d8414cc836bc.jar" />
+    </item>
+    <item
+        jar="C:\AndroidStutio\Stutio\gradle\gradle-2.10\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.47\e11abddd1e9c2053a92133fa83f78f7bedb820a9\ormlite-core-4.47.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e11abddd1e9c2053a92133fa83f78f7bedb820a9">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\ormlite-core-4.47_002a7826d85c96e82308320a1aa73a0241263d5b.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.2.1_73d2a346c0857d1476bfc7c4237fd9883007e0cf.jar" />
+    </item>
+    <item
+        jar="C:\AndroidStutio\Stutio\gradle\gradle-2.10\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\gson-2.3.1_4b5bb209069ee5c29c3955cd2e01e3c5e26f8011.jar" />
+    </item>
+    <item
+        jar="C:\AndroidStutio\Stutio\gradle\gradle-2.10\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.0.0\4c8d1536dba3812cc1592090dc20c47a4ed3c35e\okhttp-2.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4c8d1536dba3812cc1592090dc20c47a4ed3c35e">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\okhttp-2.0.0_9db0de7771f196da138c345739122addec874992.jar" />
+    </item>
+    <item
+        jar="C:\AndroidStutio\Stutio\gradle\gradle-2.10\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.47\c72f9ed54d8a8bab3fbf56da2b358308a67899a4\ormlite-android-4.47.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c72f9ed54d8a8bab3fbf56da2b358308a67899a4">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\ormlite-android-4.47_d98018d56b639d85358ac25abefd53f5bcbc1fce.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.2.1_b26976375a5ad8c4e1e6b8d3976e3d643f39fa9f.jar" />
+    </item>
+    <item
+        jar="C:\HospitalLink\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\HospitalLink\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.2.1_81dd61fcf777703515fbcf2d1aaeb9c700076322.jar" />
+    </item>
+
+</items>

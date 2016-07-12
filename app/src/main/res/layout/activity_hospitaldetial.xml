@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hl_color_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/hl_bg_hospital" />
+
+            <RelativeLayout
+                android:id="@+id/re_attertion"
+                android:layout_margin="@dimen/hl_global_distance_15"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/hl_bg_attention">
+
+                <ImageView
+                    android:id="@+id/iv_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:src="@mipmap/hl_icon_attention" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:alpha="0.5"
+                android:background="@color/hl_color_white"
+                android:padding="@dimen/hl_global_distance_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/hl_icon_gray_poi"
+                    android:drawablePadding="6dp"
+                    android:text="地址" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/hl_icon_phone_blue" />
+            </RelativeLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/hl_global_distance_10"
+            android:background="@color/hl_color_white"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/hl_textsize_20"
+            android:textColor="@color/hl_textcolor_light"
+            android:padding="@dimen/hl_global_distance_15"
+            android:text="医院服务"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+        android:background="@color/hl_color_white"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="@dimen/hl_global_distance_15"
+            android:paddingBottom="@dimen/hl_global_distance_15"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/hl_global_distance_15"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_artificial"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="43dp"
+                    android:src="@mipmap/hl_icon_artificial"
+                    android:layout_height="43dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/iv_artificial"
+                    android:layout_alignTop="@id/iv_artificial"
+                    android:layout_alignBottom="@id/iv_artificial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:text="智能导诊"
+                        android:layout_alignParentTop="true"
+                        android:textSize="@dimen/hl_textsize_20"
+                        android:textColor="@color/hl_textcolor_dark"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:text="症状自测挂对号"
+                        android:singleLine="true"
+                        android:textSize="@dimen/hl_textsize_15"
+                        android:textColor="@color/hl_textcolor_light"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:background="@color/hl_color_background"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/hl_global_distance_15"
+                android:paddingRight="@dimen/hl_global_distance_15"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:id="@+id/iv_register"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="43dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/hl_icon_register"
+                    android:layout_height="43dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/iv_register"
+                    android:layout_alignTop="@id/iv_register"
+                    android:layout_alignBottom="@id/iv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:text="实时挂号"
+                        android:layout_alignParentTop="true"
+                        android:textSize="@dimen/hl_textsize_20"
+                        android:textColor="@color/hl_textcolor_dark"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:text="手机挂号免排队"
+                        android:singleLine="true"
+                        android:textSize="@dimen/hl_textsize_15"
+                        android:textColor="@color/hl_textcolor_light"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingLeft="@dimen/hl_global_distance_15"
+            android:paddingRight="@dimen/hl_global_distance_15"
+            android:paddingBottom="@dimen/hl_global_distance_15"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="@dimen/hl_global_distance_15"
+                android:layout_marginRight="@dimen/hl_global_distance_15"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/hl_color_background"
+                android:layout_height="1px" />
+            <TextView
+                android:layout_marginLeft="@dimen/hl_global_distance_15"
+                android:layout_marginRight="@dimen/hl_global_distance_15"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/hl_color_background"
+                android:layout_height="1px" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/hl_color_white"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingBottom="@dimen/hl_global_distance_15"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/hl_global_distance_15"
+
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_reserve"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="43dp"
+                        android:src="@mipmap/hl_icon_reserve"
+                        android:layout_height="43dp" />
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/iv_reserve"
+                        android:layout_alignTop="@id/iv_reserve"
+                        android:layout_alignBottom="@id/iv_reserve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:text="手机预约"
+                            android:layout_alignParentTop="true"
+                            android:textSize="@dimen/hl_textsize_20"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_alignParentBottom="true"
+                            android:gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:text="提前预约快人一步"
+                            android:singleLine="true"
+                            android:textSize="@dimen/hl_textsize_15"
+                            android:textColor="@color/hl_textcolor_light"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:background="@color/hl_color_background"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:paddingLeft="@dimen/hl_global_distance_15"
+                    android:paddingRight="@dimen/hl_global_distance_15"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:id="@+id/iv_doctor"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="43dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/hl_icon_doctor"
+                        android:layout_height="43dp" />
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/iv_doctor"
+                        android:layout_alignTop="@id/iv_doctor"
+                        android:layout_alignBottom="@id/iv_doctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:text="科室医生"
+                            android:layout_alignParentTop="true"
+                            android:textSize="@dimen/hl_textsize_20"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_alignParentBottom="true"
+                            android:gravity="bottom"
+                            android:singleLine="true"
+                            android:layout_width="wrap_content"
+                            android:text="一览医生擅长邻域"
+                            android:textSize="@dimen/hl_textsize_15"
+                            android:textColor="@color/hl_textcolor_light"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingLeft="@dimen/hl_global_distance_15"
+                android:paddingRight="@dimen/hl_global_distance_15"
+                android:paddingBottom="@dimen/hl_global_distance_15"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/hl_global_distance_15"
+                    android:layout_marginRight="@dimen/hl_global_distance_15"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/hl_color_background"
+                    android:layout_height="1px" />
+                <TextView
+                    android:layout_marginLeft="@dimen/hl_global_distance_15"
+                    android:layout_marginRight="@dimen/hl_global_distance_15"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/hl_color_background"
+                    android:layout_height="1px" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/hl_color_white"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingBottom="@dimen/hl_global_distance_15"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/hl_global_distance_15"
+
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_pay"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="43dp"
+                        android:src="@mipmap/hl_icon_pay"
+                        android:layout_height="43dp" />
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/iv_pay"
+                        android:layout_alignTop="@id/iv_pay"
+                        android:layout_alignBottom="@id/iv_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:text="在线缴费"
+                            android:layout_alignParentTop="true"
+                            android:textSize="@dimen/hl_textsize_20"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_alignParentBottom="true"
+                            android:gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:text="线上支付快捷方便"
+                            android:singleLine="true"
+                            android:textSize="@dimen/hl_textsize_15"
+                            android:textColor="@color/hl_textcolor_light"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:background="@color/hl_color_background"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:paddingLeft="@dimen/hl_global_distance_15"
+                    android:paddingRight="@dimen/hl_global_distance_15"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:id="@+id/iv_hospital"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="43dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/hl_icon_hospital"
+                        android:layout_height="43dp" />
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/iv_hospital"
+                        android:layout_alignTop="@id/iv_hospital"
+                        android:layout_alignBottom="@id/iv_hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:text="医院简介"
+                            android:layout_alignParentTop="true"
+                            android:textSize="@dimen/hl_textsize_20"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_alignParentBottom="true"
+                            android:gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:text="点击查看医院概况"
+                            android:singleLine="true"
+                            android:textSize="@dimen/hl_textsize_15"
+                            android:textColor="@color/hl_textcolor_light"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

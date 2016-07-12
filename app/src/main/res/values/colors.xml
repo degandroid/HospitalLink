@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="hl_color_transparent">#00000000</color>
+
+    <color name="hl_color_black">#000000</color>
+    <color name="hl_color_white">#ffffff</color>
+    <color name="hl_color_background">#f0f0f0</color>
+
+    <color name="hl_textcolor_dark">#393939</color>
+    <color name="hl_textcolor_light">#999999</color>
+
+
+    <color name="hl_color_blue">#2b7cb2</color>
+    <color name="hl_color_line">#393939</color>
+    <color name="hl_color_text">#929292</color>
+    <color name="hl_color_sousuo">#cccccc</color>
+    <color name="area_color_line">#e5e5e5</color>
+    <color name="app_color_text">#6a6a72</color>
+    <color name="hl_color_green">#16807a</color>
+</resources>

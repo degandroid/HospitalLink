@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/hc_yj"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+<EditText
+    android:id="@+id/sousuo_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_transparent"
+
+    />
+<RelativeLayout
+    android:id="@+id/icon_suosuo_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+
+    >
+    <ImageView
+        android:id="@+id/icon_suosuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/iocn_sousuo"
+        android:layout_centerVertical="true"
+
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:layout_toRightOf="@id/icon_suosuo"
+    android:text="搜索医院"
+    android:textColor="@color/hl_color_sousuo"
+    ></TextView>
+</RelativeLayout>
+
+</RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/actual_gh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        >
+
+
+    </ListView>
+</LinearLayout>

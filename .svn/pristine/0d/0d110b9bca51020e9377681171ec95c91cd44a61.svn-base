@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:alpha="100"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hc_bg_dialog_custom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dialog_tittle"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/hl_global_dialog_distance_20"
+                android:layout_height="wrap_content"
+                android:text="标题" />
+        </LinearLayout>
+
+        <ImageView style="@style/hc_global_underline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dialog_content"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/hl_global_dialog_distance_20"
+                android:layout_height="wrap_content"
+                android:text="正文" />
+        </LinearLayout>
+
+        <ImageView style="@style/hc_global_underline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dialog_left"
+                android:paddingTop="@dimen/hl_global_dialog_distance_20"
+                android:paddingBottom="@dimen/hl_global_dialog_distance_20"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="left"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:background="@color/hl_color_black"
+                android:layout_width="1px"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_dialog_right"
+                android:paddingTop="@dimen/hl_global_dialog_distance_20"
+                android:paddingBottom="@dimen/hl_global_dialog_distance_20"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="right"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

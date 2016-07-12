@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_white"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:textSize="@dimen/hl_textsize_12"
+    android:text="杭州"
+    android:gravity="center"
+    android:layout_marginLeft="24dp"
+    />
+    <View
+        android:id="@+id/area_lien"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/area_color_line"
+        android:layout_marginLeft="15dp"
+        >
+
+    </View>
+</LinearLayout>

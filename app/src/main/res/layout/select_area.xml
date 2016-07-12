@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/hl_color_white"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/hc_yj"
+        android:layout_centerVertical="true"
+        >
+
+        <EditText
+            android:id="@+id/sousuo_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/hl_color_transparent"
+           android:textSize="@dimen/hl_textsize_12"
+
+            />
+        <RelativeLayout
+            android:id="@+id/icon_select_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/icon_suosuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/iocn_sousuo"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/icon_suosuo"
+                android:text="搜索地区"
+                android:textColor="@color/hl_color_sousuo"
+                ></TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+android:background="@color/area_color_line"
+
+
+        ></View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/hl_color_white"
+        >
+
+<TextView
+    android:id="@+id/area_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/hl_global_distance_15"
+    android:layout_marginLeft="24dp"
+    android:layout_centerVertical="true"
+    android:text="杭州"
+    android:textColor="@color/hl_textcolor_dark"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/hl_color_text"
+    android:layout_toRightOf="@+id/area_text"
+    android:layout_centerVertical="true"
+    android:text="GPS定位"
+    android:textSize="@dimen/hl_textsize_12"
+    android:layout_marginLeft="10dp"
+    />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/area_color_line"
+            android:layout_marginTop="8dp"
+android:layout_alignParentBottom="true"
+            ></View>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@color/hl_color_white"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/area_color_line"
+        >
+
+
+
+    </View>
+    <TextView
+        android:id="@+id/recently_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/hl_textsize_12"
+        android:text="历史访问"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        />
+<View
+    android:id="@+id/recently_lien"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/recently_text"
+    android:background="@color/area_color_line"
+    ></View>
+<com.enjoyor.hospitallink.custom.Mylistview
+    android:id="@+id/recently_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/recently_lien"
+     android:divider="#00000000"
+    android:dividerHeight="0dip"
+    ></com.enjoyor.hospitallink.custom.Mylistview>
+
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/area_color_line"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/hl_color_white"
+
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/area_color_line"
+
+            />
+        <TextView
+            android:id="@+id/all_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/hl_textsize_12"
+            android:text="全部城市"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            />
+        <View
+            android:id="@+id/all_lien"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/area_color_line"
+            android:layout_below="@id/all_text"
+            />
+        <com.enjoyor.hospitallink.custom.Mylistview
+            android:id="@+id/all_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all_lien"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"
+            ></com.enjoyor.hospitallink.custom.Mylistview>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

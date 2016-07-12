@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_myfollow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/hl_bg_hospital"
+            />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_hospitalname"
+                android:alpha="8"
+                android:padding="10dp"
+                android:background="@drawable/hl_bg_alpha_frame_rectangular"
+                android:layout_width="wrap_content"
+                android:textColor="@color/hl_color_white"
+                android:textSize="@dimen/hl_textsize_24"
+                android:text="医院名称"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/hl_textsize_15"
+                android:text="距离"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/hl_icon_point"
+                android:textColor="@color/hl_color_white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

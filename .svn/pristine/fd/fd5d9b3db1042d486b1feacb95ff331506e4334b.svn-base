@@ -1,0 +1,17 @@
+package com.enjoyor.hospitallink.common;
+
+/**
+ * Created by Administrator on 2016/6/30.
+ */
+public class BaseDate {
+
+    private static int toolbarHeight;
+
+    public static int getToolbarHeight() {
+        return toolbarHeight;
+    }
+
+    public static void setToolbarHeight(int toolbarHeight) {
+        BaseDate.toolbarHeight = toolbarHeight;
+    }
+}

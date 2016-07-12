@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\enjoyor\\HospitalLink\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\enjoyor\\HospitalLink\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\HospitalLink\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\HospitalLink\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    }
+]

@@ -1,0 +1,31 @@
+package com.enjoyor.hospitallink;
+
+import android.app.Application;
+
+import com.enjoyor.hospitallink.db.DBHelper;
+
+/**
+ * Created by Administrator on 2016/7/1.
+ */
+public class HLApplication extends Application{
+    private static HLApplication mHLApplication;
+    private DBHelper mDBHelper;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        mHLApplication = this;
+    }
+
+
+    public static HLApplication getInstance() {
+        return mHLApplication;
+    }
+
+    public DBHelper getDBHelper() {
+        if (mDBHelper == null) {
+            mDBHelper = new DBHelper(this);
+        }
+        return mDBHelper;
+    }
+}

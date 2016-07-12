@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/hl_color_white"
+
+    >
+    <TextView
+        android:id="@+id/no_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1号"
+        android:layout_marginLeft="17dp"
+        android:textSize="@dimen/hl_textsize_12"
+        android:textColor="@color/hl_textcolor_dark"
+        android:layout_centerVertical="true"
+        />
+<TextView
+    android:id="@+id/time_itme"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:text="13:20-13:30"
+    android:textSize="@dimen/hl_textsize_12"
+    android:textColor="@color/hl_textcolor_dark"
+    android:layout_toRightOf="@id/no_num"
+    android:layout_centerVertical="true"
+
+    />
+<ImageView
+    android:id="@+id/select_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/con_normal"
+    android:layout_marginRight="15dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+
+    />
+</RelativeLayout>
+</LinearLayout>

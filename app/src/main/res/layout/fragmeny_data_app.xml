@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:background="@color/hl_color_white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="21dp"
+            android:layout_centerHorizontal="true"
+            android:text="六月"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+android:background="@color/area_color_line"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+
+        >
+        <TextView
+            android:id="@+id/data1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+         android:layout_marginTop="21dp"
+            android:text="周一"
+            /><TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/data1"
+    android:layout_marginTop="10dp"
+    android:text="10"
+    android:layout_centerHorizontal="true"
+    />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+        <TextView
+            android:id="@+id/data2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="周一"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data2"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+        <TextView
+            android:id="@+id/data3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="周一"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data3"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+        <TextView
+            android:id="@+id/data4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="周一"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data4"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+        <TextView
+            android:id="@+id/data5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="周一"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data5"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1.0">
+        <TextView
+            android:id="@+id/data6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="周一"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data6"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+        <TextView
+            android:id="@+id/data7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="周一"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data7"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/area_color_line"
+        ></View>
+
+</LinearLayout>
+
+
+    <ListView
+        android:id="@+id/doctor_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        ></ListView>
+</LinearLayout>

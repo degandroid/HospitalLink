@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/department_stroke"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+<TextView
+    android:id="@+id/big_depaer_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginLeft="15dp"
+    android:textSize="@dimen/hl_textsize_18"
+    android:text="常见科室"
+    android:gravity="center"
+
+    />
+</RelativeLayout>
+</LinearLayout>

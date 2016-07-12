@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hl_global_toolbarheight_50"
+    >
+
+    <RelativeLayout
+        android:id="@+id/ph_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/hl_color_white"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="1px" >
+        <ImageButton
+            android:id="@+id/ib_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:background="@null"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/tv_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textSize="18sp" />
+
+        <!-- actionbar 右边按钮 -->
+        <TextView
+            android:id="@+id/tv_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textSize="16sp"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/ib_right"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:background="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <ImageView style="@style/hc_global_underline"
+        android:layout_alignParentBottom="true"
+        ></ImageView>
+</RelativeLayout>

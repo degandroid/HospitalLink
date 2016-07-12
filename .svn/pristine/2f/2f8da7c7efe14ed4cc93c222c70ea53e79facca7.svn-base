@@ -1,0 +1,79 @@
+package com.enjoyor.hospitallink.act;
+
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+
+import com.enjoyor.hospitallink.R;
+import com.enjoyor.hospitallink.act.base.BaseActivity;
+import com.enjoyor.hospitallink.adapter.FragmentTabAdapter;
+import com.enjoyor.hospitallink.fragment.MineFragment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
+/**
+ * Created by Administrator on 2016/7/1.
+ */
+public class MainTabActivity extends BaseActivity {
+    @Bind(R.id.main_content_radio)
+    RadioGroup main_content_radio;
+    @Bind(R.id.main_tab1)
+    RadioButton main_tab1;
+    @Bind(R.id.main_tab2)
+    RadioButton main_tab2;
+    @Bind(R.id.main_tab3)
+    RadioButton main_tab3;
+
+    private List<Fragment> fragment_list = new ArrayList<>();
+    public static int CurrentFragment = 0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_maintab);
+        ButterKnife.bind(this);
+        initAdapter();
+        initDrawable();
+    }
+
+    private void initAdapter() {
+        initFragment();
+        FragmentTabAdapter tabAdapter = new FragmentTabAdapter(this, fragment_list, R.id.tab_content, main_content_radio);
+        tabAdapter.setOnRgsExtraCheckedChangedListener(new FragmentTabAdapter.OnRgsExtraCheckedChangedListener() {
+            @Override
+            public void OnRgsExtraCheckedChanged(RadioGroup radioGroup, int checkedId, int index) {
+                CurrentFragment = index;
+            }
+        });
+    }
+
+    private void initFragment() {
+        fragment_list.clear();
+        fragment_list.add(MineFragment.getInstance(1));
+        fragment_list.add(MineFragment.getInstance(2));
+        fragment_list.add(MineFragment.getInstance(3));
+    }
+
+
+    private void initDrawable() {
+        int tabIconHeight = getResources().getDimensionPixelOffset(R.dimen.tab_icon_height);
+        Drawable topDrawable1 = getResources().getDrawable(R.mipmap.ic_launcher);
+        topDrawable1.setBounds(0, 0, tabIconHeight, tabIconHeight);
+        main_tab1.setCompoundDrawables(null, topDrawable1, null, null);
+
+        Drawable topDrawable2 = getResources().getDrawable(R.mipmap.ic_launcher);
+        topDrawable2.setBounds(0, 0, tabIconHeight, tabIconHeight);
+        main_tab2.setCompoundDrawables(null, topDrawable2, null, null);
+
+        Drawable topDrawable3 = getResources().getDrawable(R.mipmap.ic_launcher);
+        topDrawable3.setBounds(0, 0, tabIconHeight, tabIconHeight);
+        main_tab3.setCompoundDrawables(null, topDrawable3, null, null);
+
+    }
+}

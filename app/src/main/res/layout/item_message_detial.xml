@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/hl_bg_gray_corner_fram"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="2016-4-09"
+            android:textColor="@color/hl_color_white"
+            android:textSize="@dimen/hl_textsize_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/hl_global_distance_15"
+            android:layout_marginLeft="@dimen/hl_global_distance_15"
+            android:layout_marginRight="@dimen/hl_global_distance_15"
+            android:background="@drawable/hl_bg_white_slide_corner_fram"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/re_interrogation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/hl_global_distance_15">
+
+                <ImageView
+                    android:id="@+id/iv_interrogation"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/hl_icon_intterogation_messagedetial" />
+
+                <TextView
+                    android:id="@+id/tv_interrogation_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_interrogation"
+                    android:layout_toRightOf="@id/iv_interrogation"
+                    android:gravity="top"
+                    android:text="问诊消息提醒"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_18" />
+
+                <TextView
+                    android:id="@+id/tv_interrogation_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_interrogation"
+                    android:layout_below="@id/tv_interrogation_top"
+                    android:layout_toRightOf="@id/iv_interrogation"
+                    android:gravity="bottom"
+                    android:text="问诊消息提醒"
+                    android:textColor="@color/hl_textcolor_light"
+                    android:textSize="@dimen/hl_textsize_15" />
+
+            </RelativeLayout>
+
+            <ImageView style="@style/hl_global_underline_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="白日依山尽，\n黄河入海流,\n欲穷千里目,\n更上一层楼。"
+                android:textColor="@color/hl_textcolor_dark"
+                android:textSize="@dimen/hl_textsize_18" />
+
+            <ImageView style="@style/hl_global_underline_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/hl_global_distance_15">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="点击查看详情"
+                    android:textColor="@color/hl_textcolor_light"
+                    android:textSize="@dimen/hl_textsize_18" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/hl_icon_arrow_right_big" />
+
+            </RelativeLayout>
+
+            <ImageView style="@style/hl_global_underline_bg" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

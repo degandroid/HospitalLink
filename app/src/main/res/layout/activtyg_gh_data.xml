@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/hl_color_white"
+
+        >
+        <com.enjoyor.hospitallink.custom.CircularImage
+            android:id="@+id/specialist_icon"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:src="@mipmap/icon_gh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/specialist_icon"
+            android:text="罗志祥"
+            android:textSize="@dimen/hl_textsize_15"
+            android:layout_alignTop="@id/specialist_icon"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/doctor_name"
+            android:textColor="@color/hl_textcolor_dark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/doctor_name"
+            android:textSize="@dimen/hl_textsize_12"
+            android:text="主治医生"
+            android:layout_alignBottom="@id/doctor_name"
+            android:layout_marginLeft="11dp"
+            android:textColor="@color/hl_textcolor_dark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/specialist_icon"
+            android:layout_centerVertical="true"
+            android:text="诊疗记录：123次"
+            android:layout_marginLeft="18dp"
+            android:textSize="@dimen/hl_textsize_12"
+            android:textColor="@color/hl_textcolor_light"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/specialist_icon"
+            android:layout_alignBottom="@+id/specialist_icon"
+            android:layout_marginLeft="18dp"
+            android:textSize="@dimen/hl_textsize_12"
+            android:textColor="@color/hl_textcolor_light"
+            android:text="擅长：专治吹牛逼"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hl_color_white"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/locd_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/locd_dao"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="9dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业擅长"
+            android:textColor="@color/hl_textcolor_light"
+            android:textSize="@dimen/hl_textsize_18"
+            android:layout_toRightOf="@id/locd_icon"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/hl_textsize_15"
+            android:textColor="@color/hl_textcolor_dark"
+            android:text="专治吹牛逼"
+            android:layout_below="@id/locd_icon"
+            android:layout_marginBottom="10dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hl_color_white"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/doctor_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/iocn_doctor"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="9dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医生排班"
+            android:textColor="@color/hl_textcolor_light"
+            android:textSize="@dimen/hl_textsize_18"
+            android:layout_toRightOf="@id/doctor_icon"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="14dp"
+            />
+
+<RelativeLayout
+
+android:layout_marginTop="60dp"
+    android:layout_width="211dp"
+    android:layout_height="32dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/ac_color_grade"
+
+    >
+   <TextView
+       android:id="@+id/forenoon"
+       android:layout_width="105dp"
+       android:layout_height="match_parent"
+       android:text="上午"
+       android:textSize="@dimen/hl_textsize_12"
+       android:gravity="center"
+       />
+<View
+    android:id="@+id/lien"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@id/forenoon"
+    android:background="#2b7cb2"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    ></View>
+<TextView
+    android:id="@+id/afternoon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@id/lien"
+    android:text="下午"
+    android:gravity="center"
+    />
+
+
+</RelativeLayout>
+    </RelativeLayout>
+<com.enjoyor.hospitallink.custom.Mylistview
+    android:id="@+id/time_data"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    ></com.enjoyor.hospitallink.custom.Mylistview>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/hl_color_white"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/hl_textsize_12"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/hl_textcolor_light"
+                android:layout_marginTop="13dp"
+                 android:text="医院平台挂号规则"
+                />
+     
+           
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/hl_color_white"
+            >
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@mipmap/iocn_yuan"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="10dp"
+                android:textColor="@color/hl_textcolor_light"
+                android:text="挂号周期:一天以内"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/hl_color_white"
+
+            >
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@mipmap/iocn_yuan"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="10dp"
+                android:textColor="@color/hl_textcolor_light"
+                android:text="取消时限:15:00以前"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/hl_color_white"
+
+            >
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@mipmap/iocn_yuan"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="10dp"
+                android:textColor="@color/hl_textcolor_light"
+                android:text="就诊取号:请按照约定时间提前半小时凭有效证件取号"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

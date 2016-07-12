@@ -1,0 +1,9 @@
+package com.enjoyor.hospitallink.common;
+
+/**
+ * Created by Administrator on 2016/6/29.
+ * 常量
+ */
+public class Constant {
+
+}

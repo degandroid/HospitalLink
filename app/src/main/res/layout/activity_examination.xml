@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hl_color_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/hl_global_distance_10"
+            android:layout_marginLeft="@dimen/hl_global_distance_15"
+            android:layout_marginRight="@dimen/hl_global_distance_15"
+            android:layout_marginTop="@dimen/hl_global_distance_10"
+
+            android:background="@drawable/hl_bg_background_corner_fram"
+            android:padding="@dimen/hl_global_distance_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/hl_icon_search_gray"
+                android:text="搜索套餐"
+                android:drawablePadding="10dp"
+                android:textColor="@color/hl_textcolor_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+        </FrameLayout>
+
+        <ImageView style="@style/hl_global_underline_bg" />
+
+        <com.enjoyor.hospitallink.custom.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+
+            <com.enjoyor.hospitallink.custom.PullableListView
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/hl_color_white"
+                android:divider="@color/hl_color_background"
+                android:dividerHeight="1dp" />
+
+            <include layout="@layout/load_more" />
+
+        </com.enjoyor.hospitallink.custom.PullToRefreshLayout>
+    </LinearLayout>
+</LinearLayout>
