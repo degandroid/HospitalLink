@@ -11,31 +11,32 @@
         android:background="@color/hl_color_white"
         android:orientation="vertical">
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/hl_global_distance_10"
-            android:layout_marginLeft="@dimen/hl_global_distance_15"
-            android:layout_marginRight="@dimen/hl_global_distance_15"
-            android:layout_marginTop="@dimen/hl_global_distance_10"
-
-            android:background="@drawable/hl_bg_background_corner_fram"
-            android:padding="@dimen/hl_global_distance_15">
+            android:layout_margin="@dimen/hl_global_distance_15"
+            android:background="@drawable/hl_bg_background_corner_fram">
 
             <TextView
+                android:textSize="@dimen/hl_textsize_15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerInParent="true"
                 android:drawableLeft="@mipmap/hl_icon_search_gray"
+                android:drawablePadding="5dp"
                 android:text="搜索套餐"
-                android:drawablePadding="10dp"
                 android:textColor="@color/hl_textcolor_light" />
 
             <EditText
+
+                android:textSize="@dimen/hl_textsize_15"
+                android:textColor="@color/hl_textcolor_light"
+                android:id="@+id/et_search_examination"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null" />
-        </FrameLayout>
+                android:background="@null"
+                android:padding="5dp" />
+        </RelativeLayout>
 
         <ImageView style="@style/hl_global_underline_bg" />
 

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.enjoyor.hospitallink.R;
@@ -26,6 +27,8 @@ import butterknife.ButterKnife;
  * Created by Administrator on 2016/7/12.
  */
 public class ExaminationActivity extends ToolBarActivity {
+
+    @Bind(R.id.et_search_examination)EditText et_search_examination;
 
     @Bind(R.id.refresh_view)
     PullToRefreshLayout refresh_view;

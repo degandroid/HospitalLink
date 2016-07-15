@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/hl_color_white"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="37dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/hl_bg_confirm_appoint" />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@mipmap/hl_icon_success_appoint" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/hl_global_distance_15"
+                    android:text="链医，专注您的就医体验！"
+                    android:textColor="@color/hl_textcolor_light"
+                    android:textSize="@dimen/hl_textsize_18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/hl_color_white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/hl_global_distance_15">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="订单号"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="xxxxxxxxxxxxxxxx"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_18" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/hl_global_distance_15"
+                        android:background="@color/hl_color_background" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/hl_global_distance_15">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="支付方式"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="线下支付"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_18" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/hl_global_distance_15"
+                        android:background="@color/hl_color_background" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/hl_global_distance_15">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="支付金额"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="14元"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_18" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/hl_global_distance_15">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/hl_bg_blue_fram"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="5dp"
+                            android:text="查看预约单"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/hl_bg_blue_fram"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="5dp"
+                            android:text="返回首页"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_20" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/hl_color_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/hl_global_distance_15"
+                    android:text="安全提示:"
+                    android:textColor="@color/hl_textcolor_light"
+                    android:textSize="@dimen/hl_textsize_18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/hl_icon_circle_poi"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/hl_global_distance_15"
+                    android:paddingRight="28dp"
+                    android:text="实名制预约，就诊人信息不符将无法取号"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@mipmap/hl_icon_circle_poi"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/hl_global_distance_15"
+                    android:paddingLeft="@dimen/hl_global_distance_15"
+                    android:paddingRight="28dp"
+                    android:text="实名制预约，就诊人信息不符将无法取号"
+                    android:textColor="@color/hl_textcolor_dark"
+                    android:textSize="@dimen/hl_textsize_15" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

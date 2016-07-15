@@ -24,4 +24,6 @@
     <string name="loading">更多医院正在努力接洽中</string>
     <string name="load_succeed">加载成功</string>
     <string name="load_fail">加载失败</string>
+
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
 </resources>

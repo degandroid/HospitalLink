@@ -1,5 +1,6 @@
 package com.enjoyor.hospitallink.act;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import com.enjoyor.hospitallink.act.base.ToolBarActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Administrator on 2016/7/11.
@@ -18,6 +20,7 @@ import butterknife.ButterKnife;
 public class ExaminationDetialActivity extends ToolBarActivity {
 
     @Bind(R.id.ly_addcontent)LinearLayout ly_addcontent;
+    @Bind(R.id.ly_tobuy)LinearLayout ly_tobuy;
 
     @Bind(R.id.tv_price)TextView tv_price;
     @Override
@@ -41,5 +44,11 @@ public class ExaminationDetialActivity extends ToolBarActivity {
 
     private void initHead() {
         setTitle("套餐介绍");
+    }
+
+    @OnClick(R.id.ly_tobuy)
+    public void toBuy(){
+        Intent intent = new Intent(ExaminationDetialActivity.this,PayExaminationOrderActivity.class);
+        startActivity(intent);
     }
 }
