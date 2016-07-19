@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/hl_global_distance_15">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="取消"
+            android:textColor="@color/hl_textcolor_dark"
+            android:textSize="@dimen/hl_textsize_18" />
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:textColor="@color/hl_textcolor_dark"
+            android:textSize="@dimen/hl_textsize_18" />
+    </RelativeLayout>
+
+    <ImageView style="@style/hl_global_underline_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.enjoyor.hospitallink.custom.WheelView
+            android:id="@+id/wv_mouth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:itemNumber="3"
+            app:lineColor="@color/hl_textcolor_light"
+            app:maskHight="32dp"
+            app:noEmpty="true"
+            app:normalTextColor="@color/hl_textcolor_light"
+            app:normalTextSize="@dimen/hl_textsize_12"
+            app:selectedTextColor="@color/hl_textcolor_dark"
+            app:selectedTextSize="@dimen/hl_textsize_15"
+            app:unitHight="50dp" />
+
+        <com.enjoyor.hospitallink.custom.WheelView
+            android:id="@+id/wv_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:itemNumber="3"
+            app:lineColor="@color/hl_textcolor_light"
+            app:maskHight="32dp"
+            app:noEmpty="true"
+            app:normalTextColor="@color/hl_textcolor_light"
+            app:normalTextSize="@dimen/hl_textsize_12"
+            app:selectedTextColor="@color/hl_textcolor_dark"
+            app:selectedTextSize="@dimen/hl_textsize_15"
+            app:unitHight="50dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -50,7 +50,6 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
                             android:padding="10dp"
                             android:src="@mipmap/hl_icon_register" />
 
@@ -249,7 +248,7 @@
                 android:layout_gravity="left|center_vertical"
                 android:text="定位"
                 android:textColor="@color/hl_color_white"
-                android:textSize="@dimen/hl_global_distance_15" />
+                android:textSize="@dimen/hl_textsize_15" />
 
             <ImageView
                 android:id="@+id/iv_arrow_down"
@@ -300,7 +299,7 @@
                 android:layout_height="wrap_content"
                 android:text="搜索医院"
                 android:textColor="@color/hl_color_white"
-                android:textSize="@dimen/hl_global_distance_15" />
+                android:textSize="@dimen/hl_textsize_15" />
         </LinearLayout>
 
         <RelativeLayout
@@ -326,8 +325,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="gone"
-        >
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -343,7 +341,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/hl_bg_background_corner_fram"
                 android:drawableLeft="@mipmap/hl_icon_search_gray"
-                android:drawablePadding="15dp"
+                android:drawablePadding="10dp"
                 android:hint="搜索医院、医生、科室、疾病"
                 android:textColorHint="@color/hl_textcolor_light"
                 android:textSize="@dimen/hl_textsize_15" />
@@ -359,13 +357,15 @@
                 android:textSize="@dimen/hl_textsize_15" />
 
         </LinearLayout>
+
         <ImageView style="@style/hl_global_underline_bg" />
 
         <RelativeLayout
             android:id="@+id/re_search_info"
-            android:background="@color/hl_color_white"
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
+            android:background="@color/hl_color_white"
             android:padding="@dimen/hl_global_distance_15">
 
             <TextView
@@ -373,6 +373,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
                 android:hint="在杭州为您搜索相关内容"
                 android:textColor="@color/hl_textcolor_dark"
                 android:textSize="@dimen/hl_textsize_15" />
@@ -381,12 +382,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:paddingLeft="15dp"
                 android:text="切换"
                 android:textColor="@color/hl_color_blue"
-                android:textSize="@dimen/hl_textsize_15" />
+                android:textSize="@dimen/hl_textsize_18" />
 
         </RelativeLayout>
+
         <ScrollView
             android:id="@+id/sv_hosanddoc"
             android:layout_width="match_parent"
@@ -397,8 +400,6 @@
                 android:layout_height="wrap_content"
                 android:background="@color/hl_color_white"
                 android:orientation="vertical">
-
-
 
 
                 <LinearLayout

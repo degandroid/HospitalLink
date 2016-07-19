@@ -92,8 +92,6 @@ public class PayExaminationOrderActivity extends ToolBarActivity implements View
                     break;
             }
         }
-
-        ;
     };
 
     @Override
@@ -105,6 +103,10 @@ public class PayExaminationOrderActivity extends ToolBarActivity implements View
         initHead();
         initPayStyle();
     }
+    private void initHead() {
+        setTitle("支付体检订单");
+    }
+
 
     private void initPayStyle() {
         re_alipay.setOnClickListener(this);
@@ -118,10 +120,6 @@ public class PayExaminationOrderActivity extends ToolBarActivity implements View
         iv_alipay_sel.setImageResource(R.mipmap.hl_icon_paystyle);
         iv_wchat_sel.setImageResource(R.mipmap.hl_icon_paystyle);
         iv_bank_sel.setImageResource(R.mipmap.hl_icon_paystyle);
-    }
-
-    private void initHead() {
-        setTitle("支付体检订单");
     }
 
     @OnClick(R.id.ly_topay)
@@ -140,6 +138,40 @@ public class PayExaminationOrderActivity extends ToolBarActivity implements View
         }
 //        Intent intent = new Intent(PayExaminationOrderActivity.this, ConfirmExaminationActivity.class);
 //        startActivity(intent);
+    }
+
+    public void sendData() {
+        Subscription s;
+        s = Server.mineBuild(PayExaminationOrderActivity.this).getInfo()
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                        data -> {
+                            Log.i("sendData","sendData"+data.toString());
+                            getJsonInfo(data);
+                        },
+                        e -> {
+                            onError(e);
+                        }
+                );
+        addSubscription(s);
+    }
+
+    public void getJsonInfo(PayInfo payInfo) {
+        if (null != payInfo) {
+            PayReq req = new PayReq();
+//                req.appId = "wxf8b4f85f3a794e77";  // 测试用appId
+            req.appId = payInfo.getAppid();
+            req.partnerId = payInfo.getPartnerid();
+            req.prepayId = payInfo.getPrepayid();
+            req.nonceStr = payInfo.getNoncestr();
+            req.timeStamp = payInfo.getTimestamp();
+            req.packageValue = "";
+            req.sign = payInfo.getSign();
+            req.extData = "app data"; // optional
+            Toast.makeText(PayExaminationOrderActivity.this, "正常调起支付", Toast.LENGTH_SHORT).show();
+            // 在支付之前，如果应用没有注册到微信，应该先调用IWXMsg.registerApp将应用注册到微信
+            api.sendReq(req);
+        }
     }
 
     @Override
@@ -165,40 +197,5 @@ public class PayExaminationOrderActivity extends ToolBarActivity implements View
                 iv_bank_sel.setImageResource(R.mipmap.hl_icon_paystyle_sel);
                 break;
         }
-    }
-
-
-    public void sendData() {
-        Subscription s;
-        s = Server.mineBuild(PayExaminationOrderActivity.this).getInfo()
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(
-                        data -> {
-                            Log.i("sendData","sendData"+data.toString());
-                            getJsonInfo(data);
-                        },
-                        e -> {
-                            onError(e);
-                        }
-                );
-        addSubscription(s);
-    }
-
-    public void getJsonInfo(PayInfo payInfo) {
-            if (null != payInfo) {
-                PayReq req = new PayReq();
-//                req.appId = "wxf8b4f85f3a794e77";  // 测试用appId
-                req.appId = payInfo.getAppid();
-                req.partnerId = payInfo.getPartnerid();
-                req.prepayId = payInfo.getPrepayid();
-                req.nonceStr = payInfo.getNoncestr();
-                req.timeStamp = payInfo.getTimestamp();
-                req.packageValue = "";
-                req.sign = payInfo.getSign();
-                req.extData = "app data"; // optional
-                Toast.makeText(PayExaminationOrderActivity.this, "正常调起支付", Toast.LENGTH_SHORT).show();
-                // 在支付之前，如果应用没有注册到微信，应该先调用IWXMsg.registerApp将应用注册到微信
-                api.sendReq(req);
-            }
     }
 }

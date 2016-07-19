@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.enjoyor.hospitallink.R;
@@ -34,8 +33,6 @@ public class MainTabActivity extends BaseActivity {
     RadioButton main_tab2;
     @Bind(R.id.main_tab3)
     RadioButton main_tab3;
-    @Bind(R.id.root_mainactivity)
-    RelativeLayout root_mainactivity;
 
     private List<Fragment> fragment_list = new ArrayList<>();
     public static int CurrentFragment = 0;
@@ -47,9 +44,8 @@ public class MainTabActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_maintab);
+        setContentView(R.layout.activity_maintab,false);
         ButterKnife.bind(this);
-        setImmerseLayout(root_mainactivity);
         initAdapter();
         initDrawable();
     }

@@ -69,6 +69,7 @@
         <activity android:name=".act.ConfirmExaminationActivity"></activity>
         <activity android:name=".act.PayExaminationOrderActivity"></activity>
         <activity android:name=".act.ConfirmAppointActivity"></activity>
+        <activity android:name=".act.GetReportActivity"></activity>
 
 
         <activity

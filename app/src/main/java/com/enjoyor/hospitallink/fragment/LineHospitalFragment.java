@@ -39,6 +39,7 @@ import com.enjoyor.hospitallink.R;
 import com.enjoyor.hospitallink.act.Actual_gh;
 import com.enjoyor.hospitallink.act.AppointDetialActivity;
 import com.enjoyor.hospitallink.act.ExaminationActivity;
+import com.enjoyor.hospitallink.act.GetReportActivity;
 import com.enjoyor.hospitallink.act.HospitalDetialActivity;
 import com.enjoyor.hospitallink.act.MessageActivity;
 import com.enjoyor.hospitallink.adapter.HosAndDocAdapter;
@@ -649,7 +650,8 @@ public class LineHospitalFragment extends BaseFragment implements XListView.IXLi
                 startActivity(_examination);
                 break;
             case R.id.ly_report://取报告单
-
+                Intent _report = new Intent(getActivity(), GetReportActivity.class);
+                startActivity(_report);
                 break;
 
         }

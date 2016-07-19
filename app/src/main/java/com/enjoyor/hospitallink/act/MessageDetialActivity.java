@@ -15,8 +15,6 @@ import butterknife.ButterKnife;
  * Created by Administrator on 2016/7/6.
  */
 public class MessageDetialActivity extends ToolBarActivity {
-    @Bind(R.id.root_mainactivity)
-    LinearLayout root_mainactivity;
 
     @Bind(R.id.ll_content)
     LinearLayout ll_content;
@@ -36,8 +34,8 @@ public class MessageDetialActivity extends ToolBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_message_detial, false);
-        setImmerseLayout(root_mainactivity);
         ButterKnife.bind(this);
+
         if (getIntent().hasExtra("fromWhere")) {
             fromWhere = getIntent().getIntExtra("fromWhere", FROM_INTERROGATION);
             initHeadTittle();

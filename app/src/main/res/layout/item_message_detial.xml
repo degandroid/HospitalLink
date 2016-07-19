@@ -77,7 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="25dp"
-                android:text="白日依山尽，\n黄河入海流,\n欲穷千里目,\n更上一层楼。"
+                android:text="突然畏寒、高热、头痛、怕冷、寒颤、头痛剧烈、全身酸痛、疲乏无力、鼻塞、流涕、干咳、胸痛、恶心、食欲不振"
                 android:textColor="@color/hl_textcolor_dark"
                 android:textSize="@dimen/hl_textsize_18" />
 
