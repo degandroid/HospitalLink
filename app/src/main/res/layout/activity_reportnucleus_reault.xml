@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hl_color_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/hl_global_distance_15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/hl_global_distance_15"
+            android:text="核磁共振"
+            android:textColor="@color/hl_textcolor_light"
+            android:textSize="@dimen/hl_textsize_15" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/hl_bg_white_slide_corner_fram"
+            android:padding="@dimen/hl_global_distance_15">
+
+            <LinearLayout
+                android:id="@+id/ly_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hl_bg_white_slide_corner_fram"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/hl_global_distance_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="检查部位：踝关节"
+                        android:textColor="@color/hl_textcolor_light"
+                        android:textSize="@dimen/hl_textsize_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="检查日期:2016-08-21"
+                        android:textColor="@color/hl_textcolor_light"
+                        android:textSize="@dimen/hl_textsize_15" />
+
+
+                </RelativeLayout>
+
+                <ImageView style="@style/hl_global_underline_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/hl_global_distance_10"
+                        android:paddingTop="@dimen/hl_global_distance_10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="检查所见:"
+                            android:textColor="@color/hl_textcolor_light"
+                            android:textSize="@dimen/hl_textsize_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="     近日，一济南市民通过“饿了么”平台订餐却被饭店老板砍伤一事，引起市民广泛关注。不少市民致电本报96709热线，讲述自己闹心的订餐遭遇。敞口塑料袋配送食物；餐未收到，平台却显示餐已送达；82岁老大爷替女配送频遭投诉等，显示出一些外卖平台的管理漏洞。"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_18" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/hl_global_distance_10"
+                        android:paddingTop="@dimen/hl_global_distance_10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="检查所见:"
+                            android:textColor="@color/hl_textcolor_light"
+                            android:textSize="@dimen/hl_textsize_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="     近日，一济南市民通过“饿了么”平台订餐却被饭店老板砍伤一事，引起市民广泛关注。不少市民致电本报96709热线，讲述自己闹心的订餐遭遇。敞口塑料袋配送食物；餐未收到，平台却显示餐已送达；82岁老大爷替女配送频遭投诉等，显示出一些外卖平台的管理漏洞。"
+                            android:textColor="@color/hl_textcolor_dark"
+                            android:textSize="@dimen/hl_textsize_18" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/ly_top"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView style="@style/hl_global_underline_bg" />
+
+                <TextView
+                    android:paddingTop="@dimen/hl_global_distance_10"
+                    android:paddingBottom="10dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="检查所见:"
+                    android:textColor="@color/hl_textcolor_light"
+                    android:textSize="@dimen/hl_textsize_15" />
+
+                <TextView
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="检查所见:"
+                    android:textColor="@color/hl_textcolor_light"
+                    android:textSize="@dimen/hl_textsize_15" />
+            </LinearLayout>
+        </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -61,16 +61,27 @@
         <activity android:name=".act.ActivtyGhDoctorData"></activity>
         <activity android:name=".act.HospitalDetialActivity"></activity>
         <activity android:name=".act.AppointDetialActivity"></activity>
-        <activity
-            android:name=".act.ExaminationActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
         <activity android:name=".act.ExaminationDetialActivity"></activity>
         <activity android:name=".act.ConfirmExaminationActivity"></activity>
         <activity android:name=".act.PayExaminationOrderActivity"></activity>
         <activity android:name=".act.ConfirmAppointActivity"></activity>
-        <activity android:name=".act.GetReportActivity"></activity>
+        <activity android:name=".act.SelectReportActivity"></activity>
+        <activity android:name=".act.ReportPickActivity"></activity>
+        <activity android:name=".act.ResultReportActivity"></activity>
+        <activity android:name=".act.ResultReportNucleusActivity"></activity>
 
+        <!--需要隐藏软件盘的界面-->
+
+        <activity
+            android:name=".act.ExaminationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name=".act.GetReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+
+        <!--微信相关-->
 
         <activity
             android:name=".wxapi.WXPayEntryActivity"

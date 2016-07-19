@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/hl_color_background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/hl_global_distance_15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginBottom="@dimen/hl_global_distance_15"
+            android:layout_width="match_parent"
+            android:text="化验单"
+            android:textSize="@dimen/hl_textsize_15"
+            android:textColor="@color/hl_textcolor_light"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:padding="@dimen/hl_global_distance_15"
+            android:orientation="vertical"
+            android:background="@drawable/hl_bg_white_slide_corner_fram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:paddingBottom="@dimen/hl_global_distance_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_right"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/hl_textcolor_light"
+                        android:textSize="@dimen/hl_textsize_15"
+                        android:text="检验日期:2016-08-21"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/hl_textcolor_light"
+                        android:textSize="@dimen/hl_textsize_15"
+                        android:text="报告日期:2016-08-21"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/hl_global_distance_15"
+                    android:layout_toLeftOf="@id/ll_right"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/hl_textcolor_light"
+                        android:textSize="@dimen/hl_textsize_15"
+                        android:text="检验日期:2016-08-21"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/hl_textcolor_light"
+                        android:textSize="@dimen/hl_textsize_15"
+                        android:text="报告日期:2016-08-21"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+               style="@style/hl_global_underline_bg" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/hl_global_distance_10"
+                    android:paddingTop="@dimen/hl_global_distance_10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="项目名称"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="结果"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="参考值"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    style="@style/hl_global_underline_bg" />
+
+                <LinearLayout
+                    android:id="@+id/ly_addreportresult"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
